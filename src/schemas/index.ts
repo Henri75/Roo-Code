@@ -533,16 +533,13 @@ const providerSettingsRecord: ProviderSettingsRecord = {
 	rateLimitSeconds: undefined,
 	// Fake AI
 	fakeAi: undefined,
-<<<<<<< HEAD
 	// LiteLLM
 	litellmApiKey: undefined,
 	litellmApiUrl: undefined,
 	litellmModelId: undefined,
 	litellmModelInfo: undefined,
-=======
 	// X.AI (Grok)
 	xaiApiKey: undefined,
->>>>>>> upstream/main
 }
 
 export const PROVIDER_SETTINGS_KEYS = Object.keys(providerSettingsRecord) as Keys<ProviderSettings>[]

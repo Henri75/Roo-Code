@@ -88,7 +88,6 @@ type ProviderSettings = {
 	openAiUseAzure?: boolean | undefined
 	azureApiVersion?: string | undefined
 	openAiStreamingEnabled?: boolean | undefined
-	openAiContextWindowOverride?: number | undefined
 	enableReasoningEffort?: boolean | undefined
 	openAiHostHeader?: string | undefined
 	openAiHeaders?:
