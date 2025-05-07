@@ -7,13 +7,11 @@ import {
 	type ApiConfiguration,
 	openRouterDefaultModelId,
 	requestyDefaultModelId,
-<<<<<<< HEAD
 	requestyDefaultModelInfo,
 	ApiProvider,
 	liteLlmDefaultModelId,
 } from "../../../../src/shared/api"
 import { ExtensionMessage } from "../../../../src/shared/ExtensionMessage"
-=======
 	glamaDefaultModelId,
 	unboundDefaultModelId,
 } from "@roo/shared/api"
@@ -24,27 +22,8 @@ import { useAppTranslation } from "@src/i18n/TranslationContext"
 import { useRouterModels } from "@src/components/ui/hooks/useRouterModels"
 import { useSelectedModel } from "@src/components/ui/hooks/useSelectedModel"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@src/components/ui"
->>>>>>> upstream/main
 
 import {
-<<<<<<< HEAD
-	useOpenRouterModelProviders,
-	OPENROUTER_DEFAULT_PROVIDER_NAME,
-} from "@/components/ui/hooks/useOpenRouterModelProviders"
-import {
-	Select,
-	SelectContent,
-	SelectItem,
-	SelectTrigger,
-	SelectValue,
-	SelectSeparator,
-	Button,
-	Slider,
-} from "@/components/ui"
-import { MODELS_BY_PROVIDER, PROVIDERS, VERTEX_REGIONS } from "./constants"
-import { AWS_REGIONS } from "../../../../src/shared/aws_regions"
-import { VSCodeButtonLink } from "../common/VSCodeButtonLink"
-=======
 	Anthropic,
 	Bedrock,
 	Chutes,
@@ -65,9 +44,23 @@ import { VSCodeButtonLink } from "../common/VSCodeButtonLink"
 	XAI,
 } from "./providers"
 
+
+import { LiteLLM } from "./providers/LiteLLM"
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+    SelectSeparator,
+    Button,
+    Slider,
+} from "@/components/ui"
+import { VSCodeButtonLink } from "../common/VSCodeButtonLink"
+
+
 import { MODELS_BY_PROVIDER, PROVIDERS, REASONING_MODELS } from "./constants"
 import { inputEventTransform, noTransform } from "./transforms"
->>>>>>> upstream/main
 import { ModelInfoView } from "./ModelInfoView"
 import { ApiErrorMessage } from "./ApiErrorMessage"
 import { ThinkingBudget } from "./ThinkingBudget"
@@ -342,7 +335,6 @@ const ApiOptions = ({
 				/>
 			)}
 
-<<<<<<< HEAD
 			{selectedProvider === "openai-native" && (
 				<>
 					<VSCodeTextField
@@ -1314,7 +1306,6 @@ const ApiOptions = ({
 						</span>
 					</div>
 				</>
-=======
 			{selectedProvider === "glama" && (
 				<Glama
 					apiConfiguration={apiConfiguration}
@@ -1322,7 +1313,6 @@ const ApiOptions = ({
 					routerModels={routerModels}
 					uriScheme={uriScheme}
 				/>
->>>>>>> upstream/main
 			)}
 
 			{selectedProvider === "unbound" && (

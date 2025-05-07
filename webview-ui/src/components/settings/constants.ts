@@ -47,13 +47,9 @@ export const PROVIDERS = [
 	{ value: "unbound", label: "Unbound" },
 	{ value: "requesty", label: "Requesty" },
 	{ value: "human-relay", label: "Human Relay" },
-<<<<<<< HEAD
-	{ value: "litellm", label: "LiteLLM" },
-=======
 	{ value: "xai", label: "xAI (Grok)" },
 	{ value: "groq", label: "Groq" },
 	{ value: "chutes", label: "Chutes AI" },
->>>>>>> upstream/main
 ].sort((a, b) => a.label.localeCompare(b.label))
 
 export const VERTEX_REGIONS = [

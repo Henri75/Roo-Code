@@ -20,13 +20,10 @@ type ProviderSettings = {
 				| "requesty"
 				| "human-relay"
 				| "fake-ai"
-<<<<<<< HEAD
 				| "litellm"
-=======
 				| "xai"
 				| "groq"
 				| "chutes"
->>>>>>> upstream/main
 		  )
 		| undefined
 	apiModelId?: string | undefined
@@ -91,9 +88,7 @@ type ProviderSettings = {
 	openAiUseAzure?: boolean | undefined
 	azureApiVersion?: string | undefined
 	openAiStreamingEnabled?: boolean | undefined
-<<<<<<< HEAD
 	openAiContextWindowOverride?: number | undefined
-=======
 	enableReasoningEffort?: boolean | undefined
 	openAiHostHeader?: string | undefined
 	openAiHeaders?:
@@ -101,7 +96,6 @@ type ProviderSettings = {
 				[x: string]: string
 		  }
 		| undefined
->>>>>>> upstream/main
 	ollamaModelId?: string | undefined
 	ollamaBaseUrl?: string | undefined
 	vsCodeLmModelSelector?:
@@ -190,13 +184,10 @@ type GlobalSettings = {
 							| "requesty"
 							| "human-relay"
 							| "fake-ai"
-<<<<<<< HEAD
 							| "litellm"
-=======
 							| "xai"
 							| "groq"
 							| "chutes"
->>>>>>> upstream/main
 					  )
 					| undefined
 		  }[]
